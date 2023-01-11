@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.office-profile {
+  width: 75vw;
+  margin: 0 auto;
+}
+.profiles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+.profile {
+  border: 2px solid brown;
+  padding: 20px;
+  border-radius: 7px;
+}
+.profile img {
+  width: 100%;
+  border-radius: 7px 7px 0 0;
+}
+@media screen and (max-width: 576px) {
+  .profiles {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 991px) {
+  .profiles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
